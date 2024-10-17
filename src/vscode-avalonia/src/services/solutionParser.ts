@@ -113,6 +113,7 @@ async function parseSolution(context: vscode.ExtensionContext): Promise<string> 
 
 		previewer.stdout.on("data", (data) => {
 			jsonContent += data.toString();
+			logger.appendLine(data.toString());
 		});
 
 		previewer.stderr.on("data", (data) => {
