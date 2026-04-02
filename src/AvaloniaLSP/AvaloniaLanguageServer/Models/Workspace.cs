@@ -43,8 +43,13 @@ public class Workspace
         string content = File.ReadAllText(slnFilePath);
         var package = JsonSerializer.Deserialize<SolutionData>(content);
         var exeProj = package!.GetExecutableProject();
+        var targetPath = exeProj?.TargetPath;
 
-        return _metadataReader.GetForTargetAssembly(exeProj?.TargetPath ?? "");
+        if (string.IsNullOrWhiteSpace(targetPath))
+            return null;
+
+        var assemblyProvider = new DepsJsonFileAssemblyProvider(targetPath, ProjectInfo?.AssemblyPath() ?? string.Empty);
+        return _metadataReader.GetForTargetAssembly(assemblyProvider);
     }
 
     string? SolutionName(DocumentUri uri)
