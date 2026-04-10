@@ -2,15 +2,13 @@
 
 ## Requires Avalonia v11.0.2 or lower
 
-The extension require Avalonia nuget package v11.0.2 or lower. The latest version **v11.0.5 of Avalonia package will break the previewer**
+> ⚠️ THIS IS A COMMUNITY FORK OF THE ORIGINAL MIT LICENSED AVALONIA FOR VSCODE EXTENSION. IF YOU ARE LOOKING FOR NON OPEN SOURCE MAINTAINED BY THE OÜ COMPANY CHECK: https://marketplace.visualstudio.com/items?itemName=AvaloniaTeam.vscode-avalonia
 
 <hr/>
 
 Avalonia is a cross-platform XAML-based UI framework providing a flexible styling system and supporting a wide range of Operating Systems such as Windows via .NET Framework and .NET Core, Linux via Xorg and macOS.
 
 The Avalonia for Visual Studio Code Extension contains support for Avalonia XAML autocomplete and previewer.
-
-Follow the [contribution guide](CONTRIBUTING.md) if you want to help us build the extension
 
 ## Getting Started
 

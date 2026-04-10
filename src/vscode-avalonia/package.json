@@ -1,15 +1,11 @@
 {
   "name": "vscode-avalonia-community",
-  "displayName": "Avalonia for VSCode Community",
-  "description": "Avalonia tools for Visual Studio Code (community fork)",
+  "displayName": "Community fork for Avalonia for VSCode",
+  "description": "Community fork Avalonia tools for Visual Studio Code",
   "publisher": "microhobby",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "preview": true,
-  "qna": "false",
-  "sponsor": {
-    "url": "https://github.com/sponsors/AvaloniaUI"
-  },
   "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.79.0"
@@ -22,16 +18,12 @@
     "Avalonia",
     "AvaloniaUI"
   ],
-  "galleryBanner": {
-    "color": "#161C2D",
-    "theme": "dark"
-  },
   "bugs": {
-    "url": "https://github.com/AvaloniaUI/AvaloniaVSCode/issues"
+    "url": "https://github.com/microhobby/AvaloniaVSCode/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AvaloniaUI/AvaloniaVSCode"
+    "url": "https://github.com/microhobby/AvaloniaVSCode"
   },
   "activationEvents": [
     "workspaceContains:**/*.axaml",
